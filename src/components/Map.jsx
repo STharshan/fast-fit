@@ -408,7 +408,7 @@ export default function UKMapInteractive() {
   const city = cities[selectedCity];
 
   return (
-    <section className="w-full py-1 bg-white dark:bg-[#0C1416] transition-colors relative z-0">
+    <section className="w-full py-1 bg-white dark:bg-black transition-colors relative z-0">
       {/* ✅ Title */}
       <h2
         className="text-center text-3xl mt-15 mb-10 md:text-4xl font-bold text-primary dark:text-primary uppercase"

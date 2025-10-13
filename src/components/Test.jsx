@@ -73,7 +73,7 @@ export default function TestimonialsSection() {
   const testimonial = testimonials[current];
 
   return (
-    <section className="bg-black text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="bg-white dark:bg-black text-black dark:text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <p className="text-red-500 uppercase font-semibold text-sm tracking-widest mb-2">
           Testimonials
@@ -88,7 +88,7 @@ export default function TestimonialsSection() {
         {/* Left Side - Image */}
         <div className="w-full lg:w-1/2 rounded-2xl overflow-hidden shadow-2xl">
           <img
-            src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&h=600&fit=crop"
+            src="/side.jpg"
             alt={testimonial.name}
             className="w-full h-80 sm:h-96 lg:h-[500px] object-cover grayscale"
           />
@@ -96,7 +96,7 @@ export default function TestimonialsSection() {
 
         {/* Right Side - Testimonial Card */}
         <div className="w-full lg:w-1/2 relative">
-          <div className="relative bg-white text-gray-900 rounded-2xl shadow-2xl p-6 sm:p-10">
+          <div className="relative bg-white dark:bg-black text-gray-900 dark:text-white rounded-2xl shadow-2xl p-6 sm:p-10">
             {/* Quote mark inside card */}
             <div className="absolute top-4 right-4 text-red-500/30 text-6xl font-serif select-none">
               &rdquo;
@@ -110,25 +110,25 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900 dark:text-white">
               {testimonial.title}
             </h3>
 
             {/* Text */}
-            <p className="text-gray-600 mb-6 leading-relaxed">{testimonial.text}</p>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">{testimonial.text}</p>
 
             {/* Profile */}
-            <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
-                <div className="p-3  rounded-full ring-2 ring-red-500/30">
-              <img
-                src="/tab.png"
-                alt={testimonial.name}
-                className="w-10 h-10  object-cover  "
-              />
-                </div>
+            <div className="flex items-center gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+              <div className="p-3 rounded-full ring-2 ring-red-500/30">
+                <img
+                  src="/tab.png"
+                  alt={testimonial.name}
+                  className="w-10 h-10 object-cover"
+                />
+              </div>
               <div>
-                <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                <p className="text-gray-500 text-sm">{testimonial.role}</p>
+                <p className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</p>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">{testimonial.role}</p>
               </div>
             </div>
           </div>
