@@ -3,6 +3,7 @@ import HeroSection from '../components/Home/HeroSection'
 import ServiceSection from '../components/Home/ServiceSection'
 import AboutSection from '../components/Home/About'
 import UKMapInteractive from '../components/Map'
+import TestimonialsSection from '../components/Test'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <AboutSection />
       <ServiceSection />
       <UKMapInteractive />
+      <TestimonialsSection />
     </div>
   )
 }

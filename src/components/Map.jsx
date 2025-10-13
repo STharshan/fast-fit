@@ -408,22 +408,22 @@ export default function UKMapInteractive() {
   const city = cities[selectedCity];
 
   return (
-    <section className="w-full py-1 mb-10 bg-white dark:bg-[#0C1416] transition-colors mt-24 relative z-0">
+    <section className="w-full py-1 bg-white dark:bg-[#0C1416] transition-colors relative z-0">
       {/* ✅ Title */}
       <h2
-        className="text-center text-3xl mb-10 md:text-4xl font-bold text-primary dark:text-primary uppercase"
+        className="text-center text-3xl mt-15 mb-10 md:text-4xl font-bold text-primary dark:text-primary uppercase"
         data-aos="fade-down"
       >
         Find <span className="dark:text-white text-gray-700">Us</span>
       </h2>
 
       {/* ✅ Content */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="mx-auto max-w-7xl px-4 mb-15 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* LEFT PANEL */}
         <div className="rounded-2xl p-6 md:p-8 shadow-sm bg-[#F5F7F8] dark:bg-[#111A1D] relative z-10">
           <h2
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: COLORS.heading }}
+            className="text-3xl md:text-4xl font-bold mb-4 dark:text-white"
+           
           >
             {city.name}
           </h2>
@@ -431,8 +431,7 @@ export default function UKMapInteractive() {
           <div className="space-y-4 text-[15px] text-gray-700 dark:text-gray-200">
             <div>
               <p
-                className="font-semibold text-base"
-                style={{ color: COLORS.accent }}
+                className="font-semibold text-base dark:text-gray-300"
               >
                 Address
               </p>
@@ -442,20 +441,19 @@ export default function UKMapInteractive() {
             </div>
 
             <div>
-              <p className="font-semibold" style={{ color: COLORS.accent }}>
+              <p className="font-semibold dark:text-white">
                 Phone
               </p>
               <a
                 href={`tel:${city.phone}`}
-                className="underline decoration-transparent hover:decoration-inherit"
-                style={{ color: COLORS.hover }}
+                className="underline decoration-transparent dark:text-gray-300 hover:decoration-inherit"
               >
                 {city.phone}
               </a>
             </div>
 
             <div>
-              <p className="font-semibold" style={{ color: COLORS.accent }}>
+              <p className="font-semibold dark:text-gray-300" >
                 Opening Hours
               </p>
               {city.hours.map((h, i) => (
@@ -464,7 +462,7 @@ export default function UKMapInteractive() {
             </div>
 
             <div>
-              <p className="font-semibold" style={{ color: COLORS.accent }}>
+              <p className="font-semibold dark:text-gray-300">
                 Services
               </p>
               <ul className="list-disc ml-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1">
