@@ -1,0 +1,32 @@
+:root {
+  --color-primary: red;
+  --color-secondary: #1f2937;
+
+  /* Light mode colors */
+  --color-text: #000000;
+  --color-bg: #ffffff;
+
+  /* Dark mode colors */
+  --color-text-dark: #ffffff;
+  --color-bg-dark: #000000;
+
+  --color-overlay: rgba(0, 0, 0, 0.7);
+  --color-rating: red;
+}
+
+/* Text helpers */
+.text-primary { color: var(--color-primary) !important; }
+.text-light { color: var(--color-text) !important; }
+.text-dark { color: var(--color-text-dark) !important; }
+.text-rating { color: var(--color-rating); }
+.bg-rating {color: var(--color-primary);}
+
+/* Background helpers */
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-light { background-color: var(--color-bg) !important; }
+.bg-dark { background-color: var(--color-bg-dark) !important; }
+.bg-overlay { background-color: var(--color-overlay) !important; }
+
+/* Shadow & Border */
+.shadow-primary { box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.5), 0 4px 6px -2 rgba(220, 38, 38, 0.1); }
+.border-primary { border: 2px solid var(--color-primary); }
